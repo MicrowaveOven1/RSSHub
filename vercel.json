@@ -11,6 +11,11 @@
         {
             "source": "/favicon.ico",
             "destination": "/favicon.png"
+        },
+
+        {
+            "source": "/:path*",
+            "destination": "http://115.29.238.240:1200/:path*"
         }
     ]
 }
