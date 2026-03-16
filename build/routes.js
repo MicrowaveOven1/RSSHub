@@ -28956,13 +28956,12 @@ export default {
   "cognition": {
     "name": "cognition",
     "routes": {
-      "/blog/:category?": {
-        "path": "/blog/:category?",
+      "/blog": {
+        "path": "/blog",
         "name": "Blog",
         "url": "cognition.ai/blog",
         "maintainers": [
-          "Loongphy",
-          "ttttmr"
+          "Loongphy"
         ],
         "example": "/cognition/blog",
         "categories": [
@@ -28980,16 +28979,12 @@ export default {
         "radar": [
           {
             "source": [
-              "cognition.ai/blog/1",
-              "cognition.ai/blog/:category/1"
+              "cognition.ai/blog/1"
             ],
-            "target": "/blog/:category?"
+            "target": "/blog"
           }
         ],
         "view": 0,
-        "parameters": {
-          "category": "Category name, e.g., Research, Tutorials"
-        },
         "location": "blog.ts",
         "module": () => import('@/routes/cognition/blog.ts')
       }
@@ -82895,7 +82890,6 @@ export default {
         "path": "/news",
         "example": "/miyuki/news",
         "name": "News",
-        "url": "www.miyuki.jp/s/y10/news/list",
         "categories": [
           "new-media"
         ],
