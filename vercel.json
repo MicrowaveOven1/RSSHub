@@ -15,8 +15,7 @@
 
         {
             "source": "/:path*",
-            // "destination": "http://115.29.238.240:1200/:path*"
-            "destination": "http://http://47.114.101.128:1200/:path*"
+            "destination": "http://47.114.101.128:1200/:path*"
         }
     ]
 }
